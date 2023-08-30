@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	background-color: rgb(218, 216, 216);
+}
+:focus {
+	outline: transparent;
+	box-shadow: 0 0 0 2px rgba(22 163 74);
+}
