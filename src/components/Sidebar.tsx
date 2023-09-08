@@ -1,4 +1,5 @@
 import { PencilLine } from 'phosphor-react'
+import { Avatar } from './Avatar'
 
 export const Sidebar = () => {
 	return (
@@ -8,10 +9,7 @@ export const Sidebar = () => {
 				src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
 			/>
 			<div className="flex flex-col items-center text-gray-300 -mt-8">
-				<img
-					className="w-20 h-20 rounded-lg border boder-gray-800 outline outline-green-500"
-					src="https://avatars.githubusercontent.com/u/42077764?v=4"
-				/>
+				<Avatar thumb='https://avatars.githubusercontent.com/u/42077764?v=4' size={20}/>
 				<strong className="mt-2 text-gray-100 leading-normal">Stanley Wodson</strong>
 				<span className="text-sm text-gray-400">Developer</span>
 			</div>

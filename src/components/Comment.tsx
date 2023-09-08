@@ -1,17 +1,15 @@
-import {ThumbsUp, Trash} from 'phosphor-react'
+import { ThumbsUp, Trash } from 'phosphor-react'
+import { Avatar } from './Avatar'
 
 export const Comment = () => {
 	return (
 		<div className="flex gap-3">
-			<img
-				className="w-10 h-10 rounded-lg outline-none"
-				src="https://avatars.githubusercontent.com/u/42077764?v=4"
-			/>
+			<Avatar hasBorder={false} thumb='https://avatars.githubusercontent.com/u/42077764?v=4' size={10} />
 			<div className="flex-1 flex flex-col">
 				<div className=" bg-gray-700 p-2 rounded-lg w-auto">
 					<header className="flex items-start justify-between text-gray-400 p-1">
 						<div>
-							<strong className="text-gray-300 leading-normal -mt-1">Stanley Wodson</strong>
+							<strong className="text-gray-300 leading-normal">Stanley Wodson</strong>
 							<time
 								title="25 de agosto de 2023 ás 18:13"
 								dateTime="2023-08-25 18:13:30"
@@ -29,8 +27,6 @@ export const Comment = () => {
 					</button>
 				</footer>
 			</div>
-
-
 		</div>
 	)
 

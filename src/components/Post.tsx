@@ -1,3 +1,4 @@
+import { Avatar } from "./Avatar"
 import { Comment } from "./Comment"
 
 export const Post = () => {
@@ -6,10 +7,7 @@ export const Post = () => {
 			<article className="p-3 border rounded-md flex flex-col bg-gray-800">
 				<header className="flex justify-between">
 					<div className="flex gap-1">
-						<img
-							className="w-12 h-12 rounded-lg border boder-gray-800 outline outline-green-500"
-							src="https://avatars.githubusercontent.com/u/42077764?v=4"
-						/>
+					<Avatar thumb='https://avatars.githubusercontent.com/u/42077764?v=4' size={12}/>
 						<div className="flex flex-col ml-2">
 							<strong className=" text-gray-300 leading-normal -mt-1">Stanley Wodson</strong>
 							<span className="text-sm text-gray-500">Developer</span>
