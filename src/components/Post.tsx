@@ -1,5 +1,4 @@
 import { useState, FormEvent, ChangeEvent } from "react"
-import { Avatar } from "./Avatar"
 import { Comment } from "./Comment"
 import { PostProps } from "../types/postsTypes"
 
@@ -30,7 +29,10 @@ export const Post = ({ author, content, publishedAt }: PostProps) => {
 			<article className="p-3 border rounded-md flex flex-col bg-gray-800">
 				<header className="flex justify-between">
 					<div className="flex gap-1">
-						<Avatar thumb={author.avatarUrl} size={14} />
+						<img
+							className={`border-4 border-gray-800 outline w-14 h-14 rounded-lg outline-1 outline-green-500`}
+							src={author.avatarUrl}
+						/>
 						<div className="flex flex-col ml-2">
 							<strong className=" text-gray-300 leading-normal -mt-1">{author.name}</strong>
 							<span className="text-sm text-gray-500">{author.role}</span>
